@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SelectedDevice>realme RMX2032</SelectedDevice>
+    <DefaultDevice>my_device</DefaultDevice>
+    <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredDevice>Nexus 5</AndroidDesignerPreferredDevice>
+    <ActiveDebugProfile>realme RMX2032</ActiveDebugProfile>
+  </PropertyGroup>
+</Project>

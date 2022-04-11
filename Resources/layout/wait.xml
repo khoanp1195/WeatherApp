@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    
+    <ImageView
+        android:foreground="@drawable/foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView2"
+        android:src="@drawable/bg2"/>
+
+
+       <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        app:lottie_autoPlay="true"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        app:lottie_rawRes="@raw/weather"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+      />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/doan"
+        android:text="Weather "
+        android:textAlignment="center"
+        android:textColor="@color/address"
+        android:textStyle="bold"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias=".4"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/doan"
+        android:text="Hello!!! You can see the weather forecast at any time"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#FBFBFB"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_design"
+        android:padding="14dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:fontFamily="@font/doan"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.707"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/txtSigin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:fontFamily="@font/doan"
+      
+        android:onClick="login"
+        android:textSize="26sp"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

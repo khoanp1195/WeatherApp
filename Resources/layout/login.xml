@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_layout"
+ >
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2"
+        tools:layout_editor_absoluteX="-94dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        app:lottie_autoPlay="true"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+      />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/doan"
+        android:text="Weather App"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/followingBg"
+        android:textSize="63sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias=".2"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/doan"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/gradEnd"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="13dp"
+        android:hint="Email"
+        android:textColor="@color/address"
+        android:textColorHint="@color/address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintWidth_percent=".8" />
+
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="0sp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:textColor="@color/address"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="13dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="@color/address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail"
+        app:layout_constraintWidth_percent=".8" />
+
+    <CheckBox
+        android:text="Remember Me"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbxRememberMe"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/doan"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawablePadding="13dp"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintTop_toBottomOf="@id/editPass"
+        android:button="@drawable/checkbox_ischecked"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_design"
+        android:padding="14dp"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:fontFamily="@font/doan"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPass"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias="0.6"
+        />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't Have A Account ?"
+        android:fontFamily="@font/doan"
+        android:textAlignment="center"
+        android:textColor="@color/accent"
+          android:layout_marginBottom="55dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintHorizontal_bias=".4"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="@color/accent"
+        android:textSize="18sp"
+         android:layout_marginBottom="55dp"
+        android:textStyle="bold"
+        android:id="@+id/registerbtn"
+        android:fontFamily="@font/doan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <TextView
+        android:id="@+id/createText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Here ?  Create Account"
+        android:textColor="@color/accent"
+        android:fontFamily="@font/doan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+  
+
+</androidx.constraintlayout.widget.ConstraintLayout>
